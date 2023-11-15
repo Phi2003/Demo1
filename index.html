@@ -1,0 +1,975 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <style>
+    .giahot {
+      color: red;
+      font-weight: bold;
+    }
+    .giamgia {
+
+      color: #9f9f9f;
+      text-decoration-line: line-through;
+    }
+
+    .thea {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .imgdk {
+      text-align: center;
+    }
+    .textdk {
+      font-size: 15px;
+      text-align: center;
+    }
+    .imgicon {
+      width: 80px;
+      height: 80px;
+    }
+
+    .texttl {
+      font-size: 20px;
+      font-weight: bold;
+      color: #767272;
+    }
+
+    .textview {
+      font-size: 13px;
+    }
+
+    .pc,
+    .tablet,
+    .mobile {
+      align-items: center;
+      display: none;
+    }
+
+    @media (min-width:1024px) {
+      .pc {
+        display: block;
+
+      }
+    }
+
+    @media (min-width:740px) and (max-width:1023px) {
+      .tablet {
+        display: block;
+      }
+    }
+
+    @media (max-width: 740px) {
+      .mobile {
+        display: block;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Header-->
+
+  <div class="pc">
+    <div class="bg-danger bg-gradient" style="--bs-bg-opacity: .1;">
+      <div class="container">
+        <div class="row p-2 d-flex justify-content-center ">
+          <div class="col-2 pt-3">
+            <a aria-current="page" href="#" class="thea">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-square-youtube"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+          <div class="col-3 pt-3">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Tìm Kiếm..." aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+            </form>
+          </div>
+          <div class="col-2">
+            <a>
+              <img src="img/logo.jpg" width="80px" height="80px" alt="logo">
+            </a>
+          </div>
+          <div class="col-2 pt-3">
+            <a>
+              <button type="button" class="btn btn-outline-secondary">Giỏ hàng
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button></a>
+          </div>
+          <div class="col-2 pt-3">
+            <a>
+              <button type="button" class="btn btn-outline-secondary">Đặt lịch ngay</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tablet">
+    <div class="bg-danger bg-gradient" style="--bs-bg-opacity: .1;">
+
+      <div class="row p-2 d-flex justify-content-center ">
+        <div class="col-2">
+          <a aria-current="page">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <div class="col-3">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Tìm Kiếm..." aria-label="Search">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+        <div class="col-2 ">
+          <a href="#">
+            <img src="img/logo.jpg" width="80px" height="80px" alt="logo">
+          </a>
+        </div>
+        <div class="col-2">
+          <a>
+            <button type="button" class="btn btn-outline-secondary">Giỏ hàng
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button></a>
+        </div>
+        <div class="col-2">
+          <a>
+            <button type="button" class="btn btn-outline-secondary">Đặt lịch ngay</button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mobile">
+    <div class="bg-danger bg-gradient" style="--bs-bg-opacity: .1;">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link " aria-current="page">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                  <i class="fa-brands fa-square-youtube"></i>
+                  <i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Tìm Kiếm..." aria-label="Search">
+                  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </form>
+              </li>
+              <li>
+                <a>
+                  <button type="button" class="btn btn-outline-secondary">Đặt lịch ngay</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img src="img/logo.jpg" width="15%" class="img-fluid" alt="logo">
+          <a>
+            <button type="button" class="btn btn-outline-secondary">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!--Thanh Công Cụ-->
+
+  <nav class="navbar-expand-lg navbar-dark bg-light">
+    <div class="container pc tablet">
+      <div class="d-flex justify-content-round" style="text-align: center;">
+
+        <a class="col-sm-2 thea p-2" href="#">Trang Chủ</a>
+        <a class="col-sm-2 thea p-2" href="#">Giới Thiệu</a>
+        <a class="col-sm-2 thea p-2" href="ctsp.html">Sản Phẩm</a>
+        <a class="col-sm-2 thea p-2" href="#">Dịch Vụ</a>
+        <a class="col-sm-2 thea p-2" href="#">Tin Tức</a>
+        <a class="col-sm-2 thea p-2" href="#">Liên Hệ</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="p-1 mobile">
+      <div class="row imgdk">
+        <div class="col-3 ">
+          <a href="index.html">
+          <img src="img/Icon.png" class="img-fluid" alt="">
+          <h6 class="textdk">Trang chủ</h6>
+        </a>
+        </div>
+        <div class="col-3">
+          <img src="img/Icon (1).png" class="img-fluid" alt="">
+          <h6 class="textdk">Giới thiệu</h6>
+        </div>
+        <div class="col-3">
+          <img src="img/Icon (2).png" class="img-fluid" alt="">
+          <h6 class="textdk">Sản phẩm</h6>
+        </div>
+        <div class="col-3">
+          <img src="img/Icon (2).png" class="img-fluid" alt="">
+          <h6 class="textdk">Sản phẩm</h6>
+        </div>
+        <div class="col-3">
+          <img src="img/Icon (4).png" class="img-fluid" alt="">
+          <h6 class="textdk">Dịch vụ</h6>
+        </div>
+        <div class="col-3">
+          <img src="img/Icon (4).png" class="img-fluid" alt="">
+          <h6 class="textdk">Dịch vụ</h6>
+        </div>
+        <div class="col-3">
+          <img src="img/Icon (3).png" class="img-fluid" alt="">
+          <h6 class="textdk">Tin tức</h6>
+        </div>
+        <div class="col-3">
+          <img src="img/Icon (5).png" class="img-fluid" alt="">
+          <h6 class="textdk">Liên hệ</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Banner-->
+  <div class="container">
+    <img src="img/banner.jpg" class="img-fluid" alt="banner">
+  </div>
+
+  <!--Dịch vụ-->
+
+  <div style="background-image: url(img/bg1.png);" class="img-fluid">
+    <div class="container">
+      <i class="d-flex justify-content-center fs-2" style="color: orange;">Dịch Vụ</i>
+      <div class="row p-3">
+        <div class="col-3 pc tablet">
+          <img src="img/sp1.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-3 pc tablet">
+          <img src="img/sp2.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-3 pc tablet">
+          <img src="img/sp3.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-3 pc tablet">
+          <img src="img/sp4.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-6 mobile">
+          <img src="img/sp1.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-6 mobile">
+          <img src="img/sp2.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </br>
+  <!--Giới thiệu Salon Tóc Huy-->
+  <div style="background-image: url(img/bg2.png);" class="pc tablet mobile container-fluid">
+    <div class="container">
+      <div class="row p-3">
+        <div class="col-md-8">
+          <h1>Salon Tóc Huy</h1>
+          <div class="row">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s.</p>
+          </div>
+          <!--pc-->
+          <div class="pc">
+            <div class="row p-2">
+              <div class="col-2"><img src="img/icon1.jpg" class="img-fluid imgicon" alt=""></div>
+              <div class="col-4">
+                <div class="row texttl">+3000</div>
+                <div class="row">Khách Hàng</div>
+              </div>
+              <div class="col-2"><img src="img/icon2.jpg" class="img-fluid imgicon" alt=""></div>
+              <div class="col-4">
+                <div class="row texttl">+10</div>
+                <div class="row">Dịch Vụ</div>
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-2"><img src="img/icon3.jpg" class="img-fluid imgicon" alt=""></div>
+              <div class="col-4">
+                <div class="row texttl">+03</div>
+                <div class="row">Chứng Nhận</div>
+              </div>
+              <div class="col-2"><img src="img/icon4.jpg" class="img-fluid imgicon" alt=""></div>
+              <div class="col-4">
+                <div class="row texttl">+2000</div>
+                <div class="row">Đào Tạo</div>
+              </div>
+            </div>
+          </div>
+          <!--tablet mobile-->
+          <div class="tablet mobile">
+            <div class="row p-2">
+              <div class="col-4"><img src="img/icon1.jpg" class="img-fluid imgicon" alt=""></div>
+              <div class="col-2">
+                <div class="row texttl">+3000</div>
+                <div class="row">Khách Hàng</div>
+              </div>
+              <div class="col-4"><img src="img/icon2.jpg" class="img-fluid imgicon" alt=""></div>
+              <div class="col-2">
+                <div class="row texttl">+10</div>
+                <div class="row">Dịch Vụ</div>
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-4"><img src="img/icon3.jpg" class="img-fluid imgicon" alt=""></div>
+              <div class="col-2">
+                <div class="row texttl">+03</div>
+                <div class="row">Chứng Nhận</div>
+              </div>
+              <div class="col-4"><img src="img/icon4.jpg" class="img-fluid imgicon" alt=""></div>
+              <div class="col-2">
+                <div class="row texttl">+2000</div>
+                <div class="row">Đào Tạo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--ảnh-->
+        <div class="col-sm-4">
+          <img src="img/sp5.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  </br>
+  <div>
+    <p class="d-flex justify-content-center fs-2" style="color: orange;">Feedback khách hàng</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <table border="2" class="pc tablet p-3">
+            <tr>
+              <td rowspan="2" width="90px">
+                <img src="img/sp6.jpg" class="img-fluid" alt="">
+              </td>
+              <th>Nguyễn An AN</th>
+            </tr>
+            <tr>
+              <td class="fs-6">Graghic Designer</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                Salon Tóc Huy
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-6">
+          <table border="2" class="pc tablet p-3">
+            <tr>
+              <td rowspan="2" width="90px">
+                <img src="img/sp6.jpg" class="img-fluid" alt="">
+              </td>
+              <th>Nguyễn An AN</th>
+            </tr>
+            <tr>
+              <td class="fs-6">Graghic Designer</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                Salon Tóc Huy
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row p-5">
+      <div class="col-12">
+        <table border="1" class="mobile p-2">
+          <tr>
+            <td rowspan="2" width="90px">
+              <img src="img/sp6.jpg" class="img-fluid" alt="">
+            </td>
+            <th>Nguyễn An AN</th>
+          </tr>
+          <tr>
+            <td class="fs-6">Graghic Designer</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              Salon Tóc Huy
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </br>
+  </br>
+  <div style="background-image: url(img/Group\ 39.png);">
+    <br>
+    <p class="d-flex justify-content-center fs-2" style="color: orange;">Album ảnh</p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3 pc tablet">
+          <img src="img/Rectangle 8.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-3 pc tablet">
+          <img src="img/Rectangle 8 (1).png" class="img-fluid" alt="">
+        </div>
+        <div class="col-6 mobile">
+          <img src="img/Rectangle 8.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-6 mobile">
+          <img src="img/Rectangle 8 (1).png" class="img-fluid" alt="">
+        </div>
+        <div class="col-3 pc tablet">
+          <img src="img/Rectangle 8 (2).png" class="img-fluid" alt="">
+        </div>
+        <div class="col-3 pc tablet">
+          <img src="img/Rectangle 8 (3).png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <p></p>
+      <div class="row">
+        <div class="col-3 pc tablet">
+          <img src="img/Rectangle 8 (4).png" class="img-fluid" alt="">
+        </div>
+        <div class="col-3 pc tablet">
+          <img src="img/Rectangle 8 (5).png" class="img-fluid" alt="">
+        </div>
+        <div class="col-6 mobile">
+          <img src="img/Rectangle 8 (4).png" class="img-fluid" alt="">
+        </div>
+        <div class="col-6 mobile">
+          <img src="img/Rectangle 8 (5).png" class="img-fluid" alt="">
+        </div>
+        <div class="col-3 pc tablet">
+          <img src="img/Rectangle 8 (6).png" class="img-fluid" alt="">
+        </div>
+        <div class="col-3 pc tablet">
+          <img src="img/Rectangle 8 (7).png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+    <br>
+    </br>
+  </div>
+  <br>
+  <!--Các sản phẩm PC-->
+  <div class="container">
+    <p class="d-flex justify-content-center fs-2" style="color: orange;">Sản phẩm</p>
+    <div class="row">
+      <div class="col-3 mb-3 pc">
+        <div class=" card p-1">
+          <img src="img/Group 41.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th colspan="2">
+                  <h5>Tiêu đề sản phẩm được ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <td class="giahot">5.000.000đ</td>
+                <td class="giamgia">7.000.000đ</td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+                <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3 pc">
+        <div class="card p-1">
+          <img src="img/Group 57.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th colspan="2">
+                  <h5>Tiêu đề sản phẩm được ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <td class="giahot">5.000.000đ</td>
+                <td class="giamgia">7.000.000đ</td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+                <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3 pc">
+        <div class=" card p-2">
+          <img src="img/Group 41.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th colspan="2">
+                  <h5>Tiêu đề sản phẩm được ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <td class="giahot">5.000.000đ</td>
+                <td class="giamgia">7.000.000đ</td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+                <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3 pc">
+        <div class=" card p-2">
+          <img src="img/Group 57.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th colspan="2">
+                  <h5>Tiêu đề sản phẩm được ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <td class="giahot">5.000.000đ</td>
+                <td class="giamgia">7.000.000đ</td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+                <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!--Sản Phẩm tablet mobile-->
+      <div class="col-6 mb-3 tablet mobile">
+        <div class="card p-1">
+          <img src="img/Group 41.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th colspan="2">
+                  <h6>Tiêu đề sản phẩm được ghi ở đây</h6>
+                  </td>
+              </tr>
+              <tr>
+                <td class="giahot">5.000.000đ</td>
+                <td class="giamgia">6.000.000đ</td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+                <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 mb-3 tablet mobile">
+        <div class="card p-1">
+          <img src="img/Group 41.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th colspan="2">
+                  <h6>Tiêu đề sản phẩm được ghi ở đây</h6>
+                  </td>
+              </tr>
+              <tr>
+                <td class="giahot">5.000.000đ</td>
+                <td class="giamgia">5.000.000đ</td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+                <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Thông tin Salon-->
+  <br>
+  <div class="container pc tablet mobile">
+    <img src="img/Rectangle 14.png" class="img-fluid" alt="">
+  </div>
+  <br>
+  <div style="background-image: url(img/bg3.png);" class="pc tablet mobile">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+          <h1><i>Salon Tóc Huy</i></h1>
+          </p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          </p>
+          <span>Địa chỉ: 06 Vường Lài, P.Tân Thanh, Quận Tân Phú,TP.HCM</span><br>
+          <span>Điện thoại: 0931 441 556</span><br>
+          <span>Email: kythuan@sikido.vn</span>
+        </div>
+        <div class="col-md-6" style="background-image: url(img/Rectangle\ 15.png);">
+
+          <p class="d-flex justify-content-center fs-2" style="color: orange;">Đặt Lịch Ngay</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <div class="col-12"><input type="text" class="form-control" placeholder="Tên" aria-label="First name">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="col-12"><input type="text" class="form-control" placeholder="Số điện thoại"
+                    aria-label="phone"></div>
+              </div><br>
+              <br>
+              <div class="col-6">
+                <div class="col-12"><input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                </div>
+              </div>
+              <div class="col-6">
+
+                <div class="col-12"><input type="text" class="form-control" placeholder="Thời gian ngày"
+                    aria-label="day"></div>
+              </div>
+              <p></p>
+              <div class="col-12"><input type="text" class="form-control" placeholder="Dịch vụ" aria-label="sp"></div>
+              </br>
+              <p></p>
+              <div class="col-12">
+                <textarea class="form-control" aria-label="With textarea" placeholder="Ghi chú"></textarea>
+              </div>
+              <p></p>
+              <div class="col-12 d-grid gap-2">
+                <button type="submit" class="btn btn-info">Đăng Ký</button>
+              </div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Blogs-->
+  <div class="container">
+    <p class="d-flex justify-content-center fs-2" style="color: orange;"><i>Blogs</i></p>
+    <div class="row">
+      <div class="col-3 mb-3 pc">
+        <div class="card p-2">
+          <img src="img/Ảnh SP (1).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th>
+                  <h5>Tiêu đề tin tức ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <p>
+                  <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                </p>
+              </tr>
+              <tr>
+                <th>
+                  <span>Xem thêm </span><i class="fa-solid fa-circle-arrow-right fa-sm" style="color: #f0210a;"></i>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3 pc">
+        <div class="card p-2">
+          <img src="img/Ảnh SP (2).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th>
+                  <h5>Tiêu đề tin tức ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <p>
+                  <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                </p>
+              </tr>
+              <tr>
+                <th>
+                  <span>Xem thêm </span><i class="fa-solid fa-circle-arrow-right fa-sm" style="color: #f0210a;"></i>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 mb-3 pc">
+        <div class="card p-2">
+          <img src="img/Ảnh SP (3).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th>
+                  <h5>Tiêu đề tin tức ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <p>
+                  <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                </p>
+              </tr>
+              <tr>
+                <th>
+                  <span>Xem thêm </span><i class="fa-solid fa-circle-arrow-right fa-sm" style="color: #f0210a;"></i>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3 pc">
+        <div class="card p-2">
+          <img src="img/Ảnh SP (4).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th>
+                  <h5>Tiêu đề tin tức ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <p>
+                  <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                </p>
+              </tr>
+              <tr>
+                <th>
+                  <span>Xem thêm </span><i class="fa-solid fa-circle-arrow-right fa-sm" style="color: #f0210a;"></i>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 mb-3 tablet mobile">
+        <div class="card p-1">
+          <img src="img/Ảnh SP (1).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th>
+                  <h5>Tiêu đề tin tức ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <p>
+                  <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                </p>
+              </tr>
+              <tr>
+                <th>
+                  <span>Xem thêm </span><i class="fa-solid fa-circle-arrow-right fa-sm" style="color: #f0210a;"></i>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 mb-3 tablet mobile">
+        <div class="card p-1">
+          <img src="img/Ảnh SP (2).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <table align="center">
+              <tr>
+                <th>
+                  <h5>Tiêu đề tin tức ghi ở đây</h5>
+                  </td>
+              </tr>
+              <tr>
+                <p>
+                  <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                </p>
+              </tr>
+              <tr>
+                <th>
+                  <span>Xem thêm </span><i class="fa-solid fa-circle-arrow-right fa-sm" style="color: #f0210a;"></i>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Footer-->
+
+  <div style="background-color: #FEF2F2;">
+    <div class="container">
+      <br>
+      <div class="pc">
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="d-flex fs-2" style="color: orange;">Liên Hệ</p>
+            <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: 06 Vường Lài, P.Tân Thanh, Quận Tân Phú,TP.HCM</p>
+            <p><i class="fa-solid fa-phone"></i> Hotline: 0931 441 556</p>
+            <p><i class="fa-solid fa-envelope"></i></i> Email: kythuat@sikido.vn</p>
+            <p> <i class="fa-brands fa-square-facebook fa-xl"></i>
+              <i class="fa-brands fa-square-instagram fa-xl"></i>
+              <i class="fa-brands fa-square-youtube fa-xl"></i>
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <p class="d-flex fs-2" style="color: orange;">Chính Sách</p>
+            <p>Chính sách mua hàng</p>
+            <p>Chính sách bảo hành</p>
+            <p>Chính sách vận chuyển</p>
+            <p>Chính sách đổi trả</p>
+            <p>Chính sách bảo mật</p>
+          </div>
+          <div class="col-sm-3">
+            <p class="d-flex fs-2" style="color: orange;">Bản Đồ</p>
+            <img src="img/Rectangle 3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-sm-3">
+            <p class="d-flex fs-2" style="color: orange;">Fanpage</p>
+            <img src="img/Rectangle 3 (1).png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="tablet mobile">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="d-flex fs-2" style="color: orange;">Liên Hệ</p>
+            <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: 06 Vường Lài, P.Tân Thanh, Quận Tân Phú,TP.HCM</p>
+            <p><i class="fa-solid fa-phone"></i> Hotline: 0931 441 556</p>
+            <p><i class="fa-solid fa-envelope"></i></i> Email: kythuat@sikido.vn</p>
+            <p> <i class="fa-brands fa-square-facebook fa-xl"></i>
+              <i class="fa-brands fa-square-instagram fa-xl"></i>
+              <i class="fa-brands fa-square-youtube fa-xl"></i>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <p class="d-flex fs-2" style="color: orange;">Chính Sách</p>
+            <p>Chính sách mua hàng</p>
+            <p>Chính sách bảo hành</p>
+            <p>Chính sách vận chuyển</p>
+            <p>Chính sách đổi trả</p>
+            <p>Chính sách bảo mật</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="d-flex fs-2" style="color: orange;">Bản Đồ</p>
+            <img src="img/Rectangle 3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-sm-6">
+            <p class="d-flex fs-2" style="color: orange;">Fanpage</p>
+            <img src="img/Rectangle 3 (1).png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="d-flex justify-content-center" style="color: white; background-color:rgb(236, 129, 129);">
+      Copyright © 2022 - Thiết kế bởi sikido.vn
+    </span>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

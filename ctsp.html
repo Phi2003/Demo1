@@ -1,0 +1,886 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <style>
+        .tieude {
+            font-size: 30px;
+            font-family: Brush Script MT;
+            color: black;
+        }
+        .minisp {
+            font-size: 13px;
+            text-align: center;
+        }
+        .thea {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .textview{
+            font-size: 13px;
+        }
+        .giahot {
+            color: red;
+            font-weight: bold;
+        }
+
+        .giamgia {
+            color: #9f9f9f;
+            text-decoration-line: line-through;
+        }
+        .imgdk{
+          text-align: center;
+        }
+        .timeline-star {
+            background-color: #e1e1e1;
+            border-radius: 20px;
+            height: 10px;
+            position: relative;
+            width: calc(100% - 30px);
+        }     
+        .timeline-sp {
+            background-color: #e1e1e1;
+            border-radius: 20px;
+            height: 2px;
+            position: relative;
+            width: calc(100% - 30px);
+        }
+        .tieude {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .pc,
+        .tablet,
+        .mobile {
+            align-items: center;
+            display: none;
+        }
+        @media (min-width:1024px) {
+            .pc {
+                display: block;
+            }
+        }
+        @media (min-width:740px) and (max-width:1023px) {
+            .tablet {
+                display: block;
+            }
+        }
+        @media (max-width: 740px) {
+            .mobile {
+                display: block;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <div class="pc">
+        <div class="bg-danger bg-gradient" style="--bs-bg-opacity: .1;">
+            <div class="container">
+                <div class="row p-2 d-flex justify-content-center ">
+                    <div class="col-2 pt-3">
+                        <a aria-current="page" href="#" class="thea">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-square-youtube"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col-3 pt-3">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Tìm Kiếm..."
+                                aria-label="Search">
+                            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                        </form>
+                    </div>
+                    <div class="col-2">
+                        <a>
+                            <img src="img/logo.jpg" width="80px" height="80px" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-2 pt-3">
+                        <a>
+                            <button type="button" class="btn btn-outline-secondary">Giỏ hàng
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button></a>
+                    </div>
+                    <div class="col-2 pt-3">
+                        <a>
+                            <button type="button" class="btn btn-outline-secondary">Đặt lịch ngay</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tablet">
+        <div class="bg-danger bg-gradient" style="--bs-bg-opacity: .1;">
+
+            <div class="row p-2 d-flex justify-content-center ">
+                <div class="col-2">
+                    <a aria-current="page">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Tìm Kiếm..." aria-label="Search">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <div class="col-2 ">
+                    <a href="#">
+                        <img src="img/logo.jpg" width="80px" height="80px" alt="logo">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a>
+                        <button type="button" class="btn btn-outline-secondary">Giỏ hàng
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button></a>
+                </div>
+                <div class="col-2">
+                    <a>
+                        <button type="button" class="btn btn-outline-secondary">Đặt lịch ngay</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mobile">
+        <div class="bg-danger bg-gradient" style="--bs-bg-opacity: .1;">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link " aria-current="page">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                    <i class="fa-brands fa-square-youtube"></i>
+                                    <i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Tìm Kiếm..."
+                                        aria-label="Search">
+                                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                </form>
+                            </li>
+                            <li>
+                                <a>
+                                    <button type="button" class="btn btn-outline-secondary">Đặt lịch ngay</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="img/logo.jpg" width="15%" class="img-fluid" alt="logo">
+                    <a>
+                        <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!--Thanh Công Cụ-->
+
+  
+<nav class="navbar-expand-lg navbar-dark bg-light">
+    <div class="container pc tablet">
+    <div class="d-flex justify-content-round" style="text-align: center;">
+     
+        <a class="col-sm-2 thea p-2" href="index.html">Trang Chủ</a>
+        <a class="col-sm-2 thea p-2" href="#">Giới Thiệu</a>
+        <a class="col-sm-2 thea p-2" href="#">Sản Phẩm</a>
+        <a class="col-sm-2 thea p-2" href="#">Dịch Vụ</a>
+        <a class="col-sm-2 thea p-2" href="#">Tin Tức</a>
+        <a class="col-sm-2 thea p-2" href="#">Liên Hệ</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="p-1 mobile">
+     <div class="row imgdk">
+       <div class="col-3 ">
+          <img src="img/Icon.png" class="img-fluid" alt="">
+          <h6 class="textdk">Trang chủ</h6>
+       </div>
+     <div class="col-3">
+          <img src="img/Icon (1).png" class="img-fluid" alt="">
+          <h6 class="textdk">Giới thiệu</h6>
+     </div>
+     <div class="col-3">
+          <img src="img/Icon (2).png" class="img-fluid" alt="">
+          <h6 class="textdk">Sản phẩm</h6>
+     </div>
+     <div class="col-3">
+         <img src="img/Icon (2).png" class="img-fluid" alt="">
+         <h6 class="textdk">Sản phẩm</h6>
+      </div>
+     <div class="col-3">
+         <img src="img/Icon (4).png" class="img-fluid" alt="">
+         <h6 class="textdk">Dịch vụ</h6>
+     </div>
+     <div class="col-3">
+         <img src="img/Icon (4).png" class="img-fluid" alt="">
+         <h6 class="textdk">Dịch vụ</h6>
+     </div>
+     <div class="col-3">
+         <img src="img/Icon (3).png" class="img-fluid" alt="">
+         <h6 class="textdk">Tin tức</h6>
+     </div>
+     <div class="col-3">
+         <img src="img/Icon (5).png" class="img-fluid" alt="">
+         <h6 class="textdk">Liên hệ</h6>
+     </div>
+    </div>
+  </div>
+</div>
+
+<!--Banner-->
+      <div class="container">
+        
+
+    <!--Thanh thông báo-->
+    <div class="bg-secondary ">
+        <div class="d-flex flex-row bd-highlight mb-3 ps-5">
+            <div class="p-2 bd-highlight">Trang Chủ / </div>
+            <div class="p-2 bd-highlight">Sản Phẩm / </div>
+            <div class="p-2 bd-highlight">Tiêu đề sản phẩm</div>
+        </div>
+    </div>
+    <!--Thông tin sản phẩm-->
+    <div class="container-fluid pc tablet mobile">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/Hình ảnh.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    (11 đánh giá)
+                </div>
+                <p><span class="giahot" style="font-size: 30px;">150.000đ </span><span class="giamgia"
+                        style="font-size: 25px;"> 250.000đ</span></p>
+                <div class="col-12 rounded-2" style="background-color: #faf7f7;">
+                    <div class="p-2">
+                        <p>
+                            Mô tả ngắn ghi ở đây:
+                        </p>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                            here', making it look like readable English.
+                        </p>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                            here', making it look like readable English.
+                        </p>
+                    </div>
+
+                </div>
+                <p></p>
+                <p class="d-flex">
+                    <img src="img/Facebook.png" alt="">
+                    <img src="img/Twitter.png" alt="">
+                    <img src="img/Instagram.png" alt="">
+                    <img src="img/Google Plus.png" alt="">
+                    <img src="img/QR Code.png" alt="">
+                </p>
+                <p class="thea">Số lượng:</p>
+                <div class="container-fluid">
+                    <input type="number" placeholder="1" width="40px">
+                    <button type="submit" class="btn btn-danger">Thêm vào giỏ hàng</button>
+                    <button type="button" class="btn btn-success">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+          </div>
+    <br>
+    <br>
+    <!--Nội dung chi tiết-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <p class="tieude">Nội dung chi tiết</p>
+                <div class="timeline-sp"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="col-lg-3 rounded-2" style="background-color: aliceblue;">
+                <div class="container-fluid"></div>
+                <p class="d-flex justify-content-center fs-4" style="font-weight: bold;">Sản phẩm đã xem</p>
+                <div class="timeline-sp"></div>
+                <table>
+                    <tr>
+                        <td rowspan="2"> <img src="img/Rectangle 9.png" alt="" class="pe-2"></td>
+                        <td><span class="minisp">Tiêu đề sản phẩm được ghi ở đây</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="giahot">150.000đ </span><span class="giamgia"> 250.000đ</span></td>
+                    </tr>
+                </table>
+                <p></p>
+                <table>
+                    <tr>
+                        <td rowspan="2"> <img src="img/Rectangle 9.png"  class="pe-2" alt=""></td>
+                    <td><span class=" minisp">Tiêu đề sản phẩm được ghi ở đây</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="giahot">150.000đ </span><span class="giamgia"> 250.000đ</span></td>
+                    </tr>
+                </table>
+                <p></p>
+                <table>
+                    <tr>
+                        <td rowspan="2"> <img src="img/Rectangle 9.png"  class="pe-2" alt=""></td>
+                        <td><span class="minisp">Tiêu đề sản phẩm được ghi ở đây</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="giahot">150.000đ </span><span class="giamgia"> 250.000đ</span></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Đánh giá sao-->
+            <div class="container">
+                <div class="row ps-3">
+                    <div class="col-md-6 pb-3" style="background-color: #f5f5f5;">
+                        <div class="p-3">
+                            <span style="font-size: 30px; font-weight: bold;">0.0</span>
+                            <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                            </div>
+                            <div class="col-6">
+                                <div class="pt-2"></div>
+                                <div class="timeline-star"></div>
+                            </div>
+                            <div class="col-2">0%|0</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                            </div>
+                            <div class="col-6">
+                                <div class="pt-2"></div>
+                                <div class="timeline-star"></div>
+                            </div>
+                            <div class="col-2">0%|0</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                            </div>
+                            <div class="col-6">
+                                <div class="pt-2"></div>
+                                <div class="timeline-star"></div>
+                            </div>
+                            <div class="col-2">0%|0</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                            </div>
+                            <div class="col-6">
+                                <div class="pt-2"></div>
+                                <div class="timeline-star"></div>
+                            </div>
+                            <div class="col-2">0%|0</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i>
+                            </div>
+                            <div class="col-6">
+                                <div class="pt-2"></div>
+                                <div class="timeline-star"></div>
+                            </div>
+                            <div class="col-2">0%|0</div>
+                        </div>                        
+                    </div>           
+                <div class="col-md-6" style="background-color: #ebebeb;">
+                    <div class="container-fluid">
+                        <p></p><p></p>
+                        <p class="d-flex justify-content-center">
+                            <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>                         
+                        </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="col-12"><input type="text" class="form-control" placeholder="Họ và tên của bạn" aria-label="First name"></div>
+                              </div>
+                              <div class="col-6">
+                                <div class="col-12"><input type="text" class="form-control" placeholder="Email của bạn" aria-label="Email"></div>
+                              </div>
+                              <p></p>
+                              <div class="col-12">
+                                <textarea class="form-control" aria-label="With textarea" placeholder="Hãy chia sẽ những điều bạn nghĩ về sản phẩm này nhé" height="200%"></textarea>
+                              </div>
+                              <p></p>
+                              <p><i class="fa-solid fa-camera" style="color: #659cfb;"></i><a class="thea"> Gửi hình ảnh thực tế</a></p>
+                              <div class="col-12 d-grid gap-2 p-3">
+                                <button type="submit" class="btn btn-danger">Gửi</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+    <!-- Đánh giá của khách hàng-->
+    <div class="container">
+    <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-1 bd-highlight">Lọc theo: </div>
+        <div class="p-1 bd-highlight"><span class="thea">Tất cả</span></div>
+        <div class="p-1"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #eeeeee;">1 <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i></div></div>
+        <div class="p-1"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #eeeeee;">2 <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i></div></div>
+        <div class="p-1"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #eeeeee;">3 <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i></div></div>
+        <div class="p-1"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #eeeeee;">4 <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i></div></div>
+        <div class="p-1"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #eeeeee;">5 <i class="fa-solid fa-star fa-xs" style="color: #e3e3e3;"></i></div></div>
+      </div>
+      <div class="timeline-sp"></div>
+      <div class="row ">
+        <div class="col-lg-4 pt-3">
+            <div class="row">
+                <div class="col-3"><img src="img/Ellipse 6.png" alt=""></div>
+                <div class="col-6 p-3"><span class="thea">THANH TOÀN</span>
+                    <div><i class="fa-regular fa-thumbs-up"></i> Đã nhận: 0 lượt thích</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 pt-3 pb-3">
+            <div col-12>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+            <span class="thea">Cực kỳ hài lòng</span>
+            </div>
+            <div class="col-12">
+            <div style="color: green; ">Đã mua hàng <i class="fa-solid fa-circle-check" style="color: #14a800;"></i> từ shop</div>
+            </div>
+            <div class="col-12">
+                <span class="thea">Shop chuyên nghiệp</span>
+            </div>
+            <div class="col-12">
+                <span style="color: #9f9f9f;">Nhận xét từ 2 ngày trước</span>
+            </div>
+            
+            <div class="col-12"><button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                <span style="color: #9f9f9f;">Gửi trả lời</span>
+            </div>           
+        </div>
+      </div>
+      <div class="timeline-sp"></div>
+      <div class="row">
+        <div class="col-lg-4 p-3">
+            <div class="row">
+                <div class="col-3"><img src="img/Ellipse 6.png" alt=""></div>
+                <div class="col-6 p-3"><span class="thea">THANH TOÀN</span>
+                    <div><i class="fa-regular fa-thumbs-up"></i> Đã nhận: 0 lượt thích</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 p-3">
+            <div col-12>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+            <span class="thea">Cực kỳ hài lòng</span>
+            </div>
+            <div class="col-12">
+            <div style="color: green; ">Đã mua hàng <i class="fa-solid fa-circle-check" style="color: #14a800;"></i> từ shop</div>
+            </div>
+            <div class="col-12">
+                <span class="thea">Shop chuyên nghiệp</span>
+            </div>
+            <div class="col-12">
+                <span style="color: #9f9f9f;">Nhận xét từ 2 ngày trước</span>
+            </div>   
+            <div class="col-12"><button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                <span style="color: #9f9f9f;">Gửi trả lời</span>
+            </div>           
+        </div>
+      </div>
+      <div class="timeline-sp"></div>
+      <div class="row">
+        <div class="col-lg-4 pt-3">
+            <div class="row">
+                <div class="col-3"><img src="img/Ellipse 6.png" alt=""></div>
+                <div class="col-6 p-3"><span class="thea">THANH TOÀN</span>
+                    <div><i class="fa-regular fa-thumbs-up"></i> Đã nhận: 0 lượt thích</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 p-3">
+            <div col-12>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #fbff00;"></i>
+            <span class="thea">Cực kỳ hài lòng</span>
+            </div>
+            <div class="col-12">
+            <div style="color: green; ">Đã mua hàng <i class="fa-solid fa-circle-check" style="color: #14a800;"></i> từ shop</div>
+            </div>
+            <div class="col-12">
+                <span class="thea">Shop chuyên nghiệp</span>
+            </div>
+            <div class="col-12">
+                <span style="color: #9f9f9f;">Nhận xét từ 2 ngày trước</span>
+            </div>
+            
+            <div class="col-12"><button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                <span style="color: #9f9f9f;">Gửi trả lời</span>
+            </div>           
+        </div>
+      </div>
+      <br>
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #a19e9e; color: white;"><</div></div>
+        <div class="p-2"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #a19e9e; color: white;">Prev</div></div>
+        <div class="p-2"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #f59f9f; color: white;">1</div></div>
+        <div class="p-2"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #a19e9e; color: white;">2</div></div>
+        <div class="p-2"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #a19e9e; color: white;">3</div></div>
+        <div class="p-2"><div  class=" bd-highlight rounded-2 px-2" style="background-color: #a19e9e; color: white;">></div></div>
+      </div>
+      <br>
+      <br>
+      <!-- Sản phẩm liên quan-->
+      <div class="d-flex bd-highlight">
+      <div class="fa-2xl bd-highlight me-auto">Sản Phẩm Liên Quan</div>
+      <div class="bd-highlight"><i style="color: orange;">Xem tất cả</i></div>
+    </div>
+      <br>
+      <div class="timeline-sp"></div>
+      <br>
+    
+<div class="container">
+    <p class="d-flex justify-content-center fs-2" style="color: orange;">Sản phẩm</p>
+  <div class="row">
+    <div class="col-3 mb-3 pc">
+      <div class=" card p-1">
+      <img src="img/Group 41.png" class="card-img-top" alt="...">
+      <div class="card-body">
+       <table align="center">
+        <tr>
+          <th colspan="2"><h5>Tiêu đề sản phẩm được ghi ở đây</h5></td>
+        </tr>
+        <tr>
+          <td class="giahot">5.000.000đ</td>
+         <td class="giamgia">7.000.000đ</td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+          <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+        </tr>
+       </table>
+      </div>
+      </div>
+  </div>
+  <div class="col-3 mb-3 pc">
+    <div class="card p-1">
+    <img src="img/Group 57.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <table align="center">
+       <tr>
+         <th colspan="2"><h5>Tiêu đề sản phẩm được ghi ở đây</h5></td>  
+       </tr>
+       <tr>
+        <td class="giahot">5.000.000đ</td>
+        <td class="giamgia">7.000.000đ</td>
+       </tr>
+       <tr>
+         <td colspan="2" align="center">
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+         </td>
+       </tr>
+       <tr>
+         <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+         <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+       </tr>
+      </table>
+    </div>
+     </div>
+  </div>
+  <div class="col-3 mb-3 pc">
+    <div class=" card p-2">
+    <img src="img/Group 41.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <table align="center">
+       <tr>
+         <th colspan="2"><h5>Tiêu đề sản phẩm được ghi ở đây</h5></td>
+       </tr>
+       <tr>
+        <td class="giahot">5.000.000đ</td>
+        <td class="giamgia">7.000.000đ</td>
+       </tr>
+       <tr>
+         <td colspan="2" align="center">
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+         </td>
+       </tr>
+       <tr>
+         <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+         <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+       </tr>
+      </table>
+      </div>
+     </div>
+  </div>
+  <div class="col-3 mb-3 pc">
+    <div class=" card p-2">
+    <img src="img/Group 57.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <table align="center">
+       <tr>
+         <th colspan="2"><h5>Tiêu đề sản phẩm được ghi ở đây</h5></td>
+       </tr>
+       <tr>
+         <td class="giahot">5.000.000đ</td>
+         <td class="giamgia">7.000.000đ</td>
+       </tr>
+       <tr>
+         <td colspan="2" align="center">
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+           <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+         </td>
+       </tr>
+       <tr>
+         <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+         <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+       </tr>
+      </table>
+      </div>
+     </div>
+  </div>
+  <!--Sản Phẩm tablet mobile-->
+  <div class="col-6 mb-3 tablet mobile">
+    <div class="card p-1">
+    <img src="img/Group 41.png" class="card-img-top" alt="...">
+    <div class="card-body">
+     <table align="center">
+      <tr>
+        <th colspan="2"><h6>Tiêu đề sản phẩm được ghi ở đây</h6></td>
+      </tr>
+      <tr>
+        <td class="giahot">5.000.000đ</td>
+        <td class="giamgia">6.000.000đ</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+        </td>
+      </tr>
+      <tr>
+        <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+        <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+      </tr>
+     </table>
+    </div>
+    </div>
+  </div>
+  <div class="col-6 mb-3 tablet mobile">
+    <div class="card p-1">
+    <img src="img/Group 41.png" class="card-img-top" alt="...">
+    <div class="card-body">
+     <table align="center">
+      <tr>
+        <th colspan="2"><h6>Tiêu đề sản phẩm được ghi ở đây</h6></td>
+      </tr>
+      <tr>
+        <td class="giahot">5.000.000đ</td>
+        <td class="giamgia">5.000.000đ</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+          <i class="fa-solid fa-star fa-2xs" style="color: #fff700;"></i>
+        </td>
+      </tr>
+      <tr>
+        <td class="textview"><i class="fa-solid fa-cart-shopping fa-2xs"></i> lượt mua: 80</td>
+        <td class="textview"><i class="fa-regular fa-eye fa-2xs"></i> lượt xem: 140</td>
+      </tr>
+     </table>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<!-- Footer-->
+
+
+<div style="background-color: #FEF2F2;">
+    <div class="container">
+      <br>
+      <div class="pc">
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="d-flex fs-2" style="color: orange;">Liên Hệ</p>
+            <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: 06 Vường Lài, P.Tân Thanh, Quận Tân Phú,TP.HCM</p>
+            <p><i class="fa-solid fa-phone"></i> Hotline: 0931 441 556</p>
+            <p><i class="fa-solid fa-envelope"></i></i> Email: kythuat@sikido.vn</p>
+            <p> <i class="fa-brands fa-square-facebook fa-xl"></i>
+              <i class="fa-brands fa-square-instagram fa-xl"></i>
+              <i class="fa-brands fa-square-youtube fa-xl"></i>
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <p class="d-flex fs-2" style="color: orange;">Chính Sách</p>
+            <p>Chính sách mua hàng</p>
+            <p>Chính sách bảo hành</p>
+            <p>Chính sách vận chuyển</p>
+            <p>Chính sách đổi trả</p>
+            <p>Chính sách bảo mật</p>
+          </div>
+          <div class="col-sm-3">
+            <p class="d-flex fs-2" style="color: orange;">Bản Đồ</p>
+            <img src="img/Rectangle 3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-sm-3">
+            <p class="d-flex fs-2" style="color: orange;">Fanpage</p>
+            <img src="img/Rectangle 3 (1).png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="tablet mobile">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="d-flex fs-2" style="color: orange;">Liên Hệ</p>
+            <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: 06 Vường Lài, P.Tân Thanh, Quận Tân Phú,TP.HCM</p>
+            <p><i class="fa-solid fa-phone"></i> Hotline: 0931 441 556</p>
+            <p><i class="fa-solid fa-envelope"></i></i> Email: kythuat@sikido.vn</p>
+            <p> <i class="fa-brands fa-square-facebook fa-xl"></i>
+              <i class="fa-brands fa-square-instagram fa-xl"></i>
+              <i class="fa-brands fa-square-youtube fa-xl"></i>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <p class="d-flex fs-2" style="color: orange;">Chính Sách</p>
+            <p>Chính sách mua hàng</p>
+            <p>Chính sách bảo hành</p>
+            <p>Chính sách vận chuyển</p>
+            <p>Chính sách đổi trả</p>
+            <p>Chính sách bảo mật</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="d-flex fs-2" style="color: orange;">Bản Đồ</p>
+            <img src="img/Rectangle 3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-sm-6">
+            <p class="d-flex fs-2" style="color: orange;">Fanpage</p>
+            <img src="img/Rectangle 3 (1).png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+      <span class="d-flex justify-content-center" style="color: white; background-color:rgb(236, 129, 129);" >
+        Copyright © 2022 - Thiết kế bởi sikido.vn
+      </span>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
